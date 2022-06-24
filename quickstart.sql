@@ -6,6 +6,8 @@
 show databases;
 
 create database if not exists helloworld;
+create database if not exists tutorial;
+
 
 create table helloworld.my_first_table
 (

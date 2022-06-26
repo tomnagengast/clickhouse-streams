@@ -4,5 +4,6 @@
 
 1. Ensure Clickhouse is installed
 2. Start the server
-  - Linux: `sudo /home/clickhouse/clickhouse start`
-  - Mac: `~/clickhouse server`
+  - Linux: `cd /home/clickhouse && sudo ./clickhouse start`
+  - Mac: `cd ~/clickhouse && ./clickhouse server`
+  > Clickhouse stores data in directory where the server is started from

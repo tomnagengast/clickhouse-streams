@@ -129,11 +129,17 @@ select dictHas('taxi_zone_dictionary', 4567) as Borough;
 
 select
     count(1) as total,
-    Borough
+    Borough,
+    bar(total, 0, 10000, 100)
 from trips
-join taxi_zone_dictionary
-on toUInt64(trips.pickup_nyct2010_gid) = taxi_zone_dictionary.LocationID
+join taxi_zone_dictionary on toUInt64(trips.pickup_nyct2010_gid) = taxi_zone_dictionary.LocationID
 where dropoff_nyct2010_gid = 132
    or dropoff_nyct2010_gid = 138
 group by Borough
 order by total desc;
+--
+-- select toYear(date) as year, round(avg(price)) as price, bar(price, 0, 2000000, 100)
+-- from uk_price_paid
+-- where town = 'LONDON'
+-- group by year
+-- order by year;

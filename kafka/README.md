@@ -1,6 +1,8 @@
 # Kafka
 
-Follow the quickstart: https://kafka.apache.org/quickstart
+Resources
+- Follow the quickstart: https://kafka.apache.org/quickstart
+- Using Kafka with Clickhouse: https://www.youtube.com/watch?v=f8GmRDdVJ-c
 
 ## Running on Mac
 
